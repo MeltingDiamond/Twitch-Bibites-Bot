@@ -13,7 +13,7 @@ This is my twitch bot for controlling the game from the chat.
    * Save and close the .env file.
 4. Now open The bibites in fullscreen and your prefered streaming software (OBS is a good choise with a lot of tutorials on YouTube) and start the stream
 5. Before you start the bot you want to open a simulation.
-6. Then either run the [Install.bat](/Install.bat) to install everything you need to run the bot, or run the [Install-and-Start.bat](/Install and Start.bat) to install everything you need and start the bot.
+6. Then either run the [Install.bat](/Install.bat) to install everything you need to run the bot, or run the [Install and Start.bat](/Install-and-Start.bat) to install everything you need and start the bot.
    _ If you chose to run [Install.bat](/Install.bat) you need to run the [Start.bat](/Start.bat) file to start the bot.
    Make sure that The Bibites is in the foreground so it wont mess thing up on your device.
 7. Head over to Twitch and test the commands run the help command to see what commands you can use (help).
