@@ -39,7 +39,7 @@ class Bot(commands.Bot):
     async def help(self, ctx: commands.Context):
         self.last_command = "help"
         
-        await ctx.send('The commands you can use are: !random !oldest !egg !gen !zone !panning !zoom in !zoom out !brain !biology !genes !stats !rename !place `name of bibite` !information !alias')
+        await ctx.send('The commands you can use are: !random !oldest !egg !gen !zone !panning !zoom in !zoom out !brain !biology !genes !stats !rename !place `name of bibite` !information !alias !thanos')
     
     @commands.command()
     async def alias(self, ctx: commands.Context):
@@ -90,18 +90,29 @@ class Bot(commands.Bot):
         press('k')
         await ctx.send(f'{ctx.author.name} turned on autopanning')
     
+    @commands.command(aliases=['+'])
+    async def zoompluss(self, ctx: commands.Context):
+        self.last_command = "zoom"
+
+        press('+')
+        await ctx.send(f'{ctx.author.name} zoomed in')
+    
+    @commands.command(aliases=['-'])
+    async def zoomminus(self, ctx: commands.Context):
+        self.last_command = "zoom"
+        
+        press('-')
+        await ctx.send(f'{ctx.author.name} zoomed out')
+
     @commands.command(aliases=['+', '-'])
     async def zoom(self, ctx: commands.Context, inorout : str = "None"):
         self.last_command = "zoom"
-
-        alias_used = ctx.command.name  # Get the actual command name (including aliases)
-        print(alias_used)
         
-        if inorout == "out" or alias_used == '-':
+        if inorout == "out":
             press('-')
             await ctx.send(f'{ctx.author.name} zoomed out')
 
-        elif inorout == "in" or alias_used == '+':
+        elif inorout == "in":
             press('+')
             await ctx.send(f'{ctx.author.name} zoomed in')
     
@@ -109,8 +120,15 @@ class Bot(commands.Bot):
     async def restart(self, ctx: commands.Context):
         if ctx.author.name == "melting__diamond":
             await ctx.send(f'Restarting the bot...')
-            subprocess.run(["start", "Start.bat"], shell=True)  # Run the batch file
-            await self.close()  # Close the current bot instance
+            
+            # Start the new instance of the bot
+            process = subprocess.Popen(["start", "Start.bat"], shell=True)
+            
+            # Wait for the subprocess to finish
+            process.wait()
+            
+            # Close the current bot instance
+            await self.close()
         else:
             await ctx.send(f'Only admin can restart the bot')
     
@@ -379,6 +397,27 @@ class Bot(commands.Bot):
         ahk.click()
 
         await ctx.send(f'{ctx.author.name} placed {bibite}')
+    
+    @commands.command()
+    async def thanos(self, ctx: commands.Context, name : str = None):
+        self.last_command = "thanos"
+        
+        time.sleep(0.1)
+        ahk.mouse_move(screen_width/20, screen_height/1.02, speed=1, relative=False) # Go to petri dish icon
+        time.sleep(0.1)
+        ahk.click()
+
+        time.sleep(0.1)
+        ahk.mouse_move(screen_width/20, screen_height/1.1, speed=1, relative=False) # Go to petri dish icon
+        time.sleep(0.1)
+        ahk.click()
+
+        time.sleep(0.1)
+        ahk.mouse_move(screen_width/1.7, screen_height/1.8, speed=1, relative=False) # Go to petri dish icon
+        time.sleep(0.1)
+        ahk.click()
+
+        await ctx.send(f'{ctx.author.name} snaped half the population away')
 
 bot = Bot()
 bot.run()
