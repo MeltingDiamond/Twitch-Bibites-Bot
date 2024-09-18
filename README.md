@@ -1,5 +1,5 @@
 # Twitch-Bibites-Bot
-This is my twitch bot for controlling the game from the chat.
+This is my twitch bot for controlling The Bibites from the chat.
 
 ## Install instructions:
 1. Download the entire repository to a folder on the device you are going to be running The bibites on and streaming to Twitch.
@@ -8,7 +8,7 @@ This is my twitch bot for controlling the game from the chat.
    * Copy the Client ID and past it in client_id = "Client ID here"
    * Go to [https://twitchtokengenerator.com/](https://twitchtokengenerator.com/) and get your access token and place it after oauth: in tmi_token = "oauth:access token here"
    * nickname is the name of the account running the bot, place the name in nickname = "nickname here"
-   * bot_prefix is the prefix of the prefix that will be used to run commands in Twitch chatbot_prefix = "!"
+   * bot_prefix is the prefix that will be used to run commands in Twitch: chatbot_prefix = "!"
    * channel is the channel where the bot will respond in (make sure to keep the #), add all the channels where you will be streaming The Bibites channel = "#Your channel name here"
    * Save and close the .env file.
 4. Now open The bibites in fullscreen and your prefered streaming software (OBS is a good choise with a lot of tutorials on YouTube) and start the stream
