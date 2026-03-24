@@ -1,0 +1,20 @@
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\obj\Debug\Twitch Chat Controller.csproj.AssemblyReference.cache
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\obj\Debug\Twitch Chat Controller.csproj.CoreCompileInputs.cache
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\Twitch Chat Controller.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\Twitch Chat Controller.pdb
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\0Harmony.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\BepInEx.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\BibitesAssembly.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\TwitchLib.Client.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\TwitchLib.Client.Enums.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\TwitchLib.Client.Models.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\TwitchLib.Communication.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\UnityEngine.CoreModule.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\UnityEngine.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\Unity.TextMeshPro.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\UnityEngine.UI.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\obj\Debug\Twitch C.C24C9A94.Up2Date
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\obj\Debug\Twitch Chat Controller.dll
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\obj\Debug\Twitch Chat Controller.pdb
+H:\BepInEx mods\Twitch Chat Controller\Twitch Chat Controller\bin\Debug\Newtonsoft.Json.dll
